@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: blue;
+}
+
+@media screen and (min-width: 600px) {
+  .container-nav {
+    max-width: 900px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    margin-left: 1em;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(300px);
+  }
+}
+
+.abc {
+  animation-name: slideInLeft;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
